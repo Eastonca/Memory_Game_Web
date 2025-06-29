@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.disabled {
+    pointer-events: none;      /* prevents hover and click */
+    opacity: 0.9;              /* optional: visual feedback it's disabled */
+    transition: none;          /* disables transition effects */
+}
+
+#title {
+    margin-top: 5vh;
+    font-family: 'Gill Sans';
+    font-size: 3rem;
+}
+
+#gameBoard {
+    margin-top: 5vh;
+    max-width: 40vw;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+}
+
+#gameBoard button {
+    border-radius: 15px;
+    border-width: 4px;
+    margin: 1px;
+    aspect-ratio: 1 / 1;
+}
+
+#gameBoard button:hover {
+    cursor: pointer;
+}
+
+.lit {
+    filter: brightness(1.5);
+}
+
+#greenBtn {
+    background-color: hsl(120, 85%, 35%);
+}
+
+#greenBtn:hover {
+    background-color: hsl(120, 87%, 25%);
+}
+
+#greenBtn:active {
+    background-color: hsl(120, 85%, 15%);
+}
+
+#redBtn {
+    background-color: hsl(0, 94%, 45%);
+}
+
+#redBtn:hover {
+    background-color: hsl(0, 94%, 35%);
+}
+
+#redBtn:active {
+    background-color: hsl(0, 94%, 25%);
+}
+
+#yellowBtn {
+    background-color: hsl(64, 87%, 45%);
+}
+
+#yellowBtn:hover {
+    background-color: hsl(64, 87%, 35%);
+}
+
+#yellowBtn:active {
+    background-color: hsl(64, 87%, 25%);
+}
+
+#blueBtn {
+    background-color: hsl(219, 84%, 40%);
+}
+
+#blueBtn:hover {
+    background-color: hsl(219, 84%, 30%);
+}
+
+#blueBtn:active {
+    background-color: hsl(219, 84%, 20%);
+}
+
+.roundInfoPanel {
+    margin-top: 5vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameStart {
+    margin-top: 5vh;
+    font-size: 2.5rem;
+    width: 150px;
+    aspect-ratio: 2.5 / 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: hsl(0, 0%, 54%);
+    border-width: 5px;
+    border-radius: 5px 15px 15px 40px;
+}
+
+#gameStart:hover {
+    background-color: hsl(0, 0%, 39%);
+    cursor: pointer;
+}
