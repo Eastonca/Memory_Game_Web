@@ -3,7 +3,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const startBtn = get("gameStart");
 
-const maxRound = 5;
+const maxRound = 10;
 const colors = ["green", "red", "yellow", "blue"];
 let pattern = [];
 let round;
@@ -23,9 +23,9 @@ const sounds = {
 }
 
 const gameOverSound = new Audio("audio/gameOver.mp3");
-gameOverSound.volume = 0.3;
+gameOverSound.volume = 0.6;
 const gameWinningSound = new Audio("audio/winning.mp3");
-gameWinningSound.volume = 0.3;
+gameWinningSound.volume = 0.6;
 
 const roundDisplay = get("round");
 const turnDisplay = get("turnDisplay")
